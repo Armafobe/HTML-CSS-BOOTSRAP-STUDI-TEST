@@ -22,13 +22,25 @@ nav ul li {
   color: white;
 }
 
-#main_title,
-section {
+#main_title {
   border-bottom: 4px solid black;
 }
 
+h2,
+h3 {
+  text-align: center;
+}
+
 article {
+  text-align: justify;
   border-right: 4px solid black;
+}
+
+#no_border {
+  border: none;
+}
+
+p {
   text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
