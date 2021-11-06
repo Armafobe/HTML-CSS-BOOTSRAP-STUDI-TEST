@@ -76,35 +76,31 @@
   <!-- MAIN -->
   <main class="container-fluid m-auto">
     <h2 class="display-4 pb-4" id="main_title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
     <!-- LEFT SECTION -->
-    <section>
-      <div class="row">
-        <div class="col-12 col-md-6">
+    <div class="row">
+      <div class="col-12 col-xl-6">
+        <section>
           <article>
             <h3 class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
             <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, rem expedita, saepe id ab architecto quaerat dolore asperiores omnis quis rerum corrupti beatae reiciendis, veritatis odit obcaecati minus pariatur harum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Repellat, eius! Quo cum nisi vel obcaecati accusantium labore temporibus mollitia eius, porro incidunt voluptatem? Iusto sint fuga deserunt consectetur ex aut.</p>
-              <div class="row container">
-                <div class="col">
-                <div class="card text-center mb-3" style="width: auto;">
-                  <div id="carouselThreatenedSpecies" class="carousel slide" data-ride="carousel">
+              <!-- CARDS-->
+              <div class="row container-fluid align-items-center">
+                <div class="col-sm-6 col-12">
+                <div class="card text-center mb-3 shadow p-3 bg-warning rounded" style="width: auto;">
+                  <div id="carouselThreatenedSpecies" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100 rounded-top" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/le-panda-roux.jpg" alt="Panda roux">
+                        <img class="w-100 rounded" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/le-panda-roux.jpg" alt="Panda roux">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100 rounded-top" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/tigre.jpg" alt="Tigre">
+                        <img class="w-100 rounded" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/tigre.jpg" alt="Tigre">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100 rounded-top" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/la-baleine-bleue.jpg" alt="Baleine bleue">
+                        <img class="w-100 rounded" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/la-baleine-bleue.jpg" alt="Baleine bleue">
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselThreatenedSpecies" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselThreatenedSpecies" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
                   </div>
                   <div class="card-body bg-warning" id="card_body">
                     <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi nisi ducimus laborum eveniet eos itaque ullam veniam perspiciatis.</p>
@@ -112,26 +108,20 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card text-center mb-3">
-                  <div id="carouselToBeExtinctSpecies" class="carousel slide" data-ride="carousel">
+              <div class="col-sm-6 col-12">
+                <div class="card text-center mb-3 shadow p-3 bg-danger rounded">
+                  <div id="carouselToBeExtinctSpecies" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="w-100 rounded-top" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/gavial-du-gange.jpg" alt="image">
+                        <img class="w-100 rounded" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/gavial-du-gange.jpg" alt="image">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100 rounded-top" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/kakapo.jpg" alt="image">
+                        <img class="w-100 rounded" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/kakapo.jpg" alt="image">
                       </div>
                       <div class="carousel-item">
-                        <img class="w-100 rounded-top" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/orang-outan.jpg" alt="image">
+                        <img class="w-100 rounded" src="https://www.conservation-nature.fr/wp-content/themes/plantora/img/orang-outan.jpg" alt="image">
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselToBeExtinctSpecies" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselToBeExtinctSpecies" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
                   </div>
                   <div class="card-body bg-danger" id="card_body">
                     <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi nisi ducimus laborum eveniet eos itaque ullam veniam perspiciatis.</p>
@@ -139,22 +129,58 @@
                   </div>
                 </div>
               </div>
+              <!-- END OF CARDS -->
             </div>
           </article>
-        </div>
-        <div class="col-12 col-md-6">
-          <article id="no_border">
-            
-          </article>
-        </div>
+        </section>
       </div>
-    </section>
+      <!-- END OF LEFT SECTION -->
+
+      <!-- RIGHT SECTION -->
+      <div class="col-12 col-xl-6">
+        <section>
+          <article class="container-fluid" id="no_border">
+            <div class="accordion pt-2 pe-auto" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Lorem Ipsum
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body alert-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam debitis at voluptatibus exercitationem praesentium atque quam culpa? Dolore corrupti placeat eveniet dolorum praesentium veritatis ea pariatur ipsam officiis sint!
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Lorem Ipsum
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam debitis at voluptatibus exercitationem praesentium atque quam culpa? Dolore corrupti placeat eveniet dolorum praesentium veritatis ea pariatur ipsam officiis sint!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <!-- END OF RIGHT SECTION -->
+    </div>
     
   </main>
 
 
   <footer>
-
+    
   </footer>
 
   <!-- JavaScript Bundle with Popper -->

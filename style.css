@@ -32,15 +32,26 @@ h3 {
 }
 
 article {
-  text-align: justify;
   border-right: 4px solid black;
+}
+
+p,
+article {
+  text-align: justify;
 }
 
 #no_border {
   border: none;
 }
 
-p {
-  text-align: justify;
+@media screen and (max-width: 1200px) {
+  body,
+  html {
+    width: auto;
+  }
+  article {
+    border-right: none;
+    border-bottom: 4px solid black;
+  }
 }
 /*# sourceMappingURL=style.css.map */
