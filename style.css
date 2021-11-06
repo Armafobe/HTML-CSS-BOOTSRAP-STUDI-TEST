@@ -2,8 +2,9 @@
 html,
 body {
   font-family: Yaldevi, sans-serif;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 99vh;
+  background-color: #8db1c9;
 }
 
 nav ul li {
@@ -12,7 +13,7 @@ nav ul li {
 
 #home:hover,
 #event:hover {
-  color: red;
+  color: white;
 }
 
 #contact {
@@ -22,5 +23,11 @@ nav ul li {
 #contact:hover {
   background-color: #198754;
   color: white;
+}
+
+#main_title {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-style: italic;
 }
 /*# sourceMappingURL=style.css.map */
