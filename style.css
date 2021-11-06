@@ -4,7 +4,7 @@ body {
   font-family: Yaldevi, sans-serif;
   width: 100vw;
   height: 99vh;
-  background-color: #8db1c9;
+  background-color: #e3ecf2;
 }
 
 nav ul li {
@@ -12,10 +12,7 @@ nav ul li {
 }
 
 #home:hover,
-#event:hover {
-  color: white;
-}
-
+#event:hover,
 #contact {
   color: #198754;
 }
@@ -25,9 +22,13 @@ nav ul li {
   color: white;
 }
 
-#main_title {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  font-style: italic;
+#main_title,
+section {
+  border-bottom: 4px solid black;
+}
+
+article {
+  border-right: 4px solid black;
+  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
