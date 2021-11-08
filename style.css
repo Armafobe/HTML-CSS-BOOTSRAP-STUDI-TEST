@@ -22,8 +22,13 @@ nav ul li {
   color: white;
 }
 
-#main_title {
+#main_title,
+#species_preservation {
   border-bottom: 4px solid black;
+}
+
+#species_preservation {
+  border-right: none;
 }
 
 h2,
@@ -40,8 +45,13 @@ article {
   text-align: justify;
 }
 
-#no_border {
-  border: none;
+.protect_list {
+  list-style-type: "\2713";
+  color: green;
+}
+
+.protect_list li {
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -52,6 +62,9 @@ article {
   article {
     border-right: none;
     border-bottom: 4px solid black;
+  }
+  #payment {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

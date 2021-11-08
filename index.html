@@ -19,7 +19,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="GET">
+        <form action="" method="get">
         <div class="row">
           <div class="col">
             <label for="name">Nom</label>
@@ -83,14 +83,14 @@
       <div class="col-12 col-xl-6">
         <section>
           <article>
-            <h3 class="pt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3 class="pt-2">Qui protégeons-nous ?</h3>
             <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, rem expedita, saepe id ab architecto quaerat dolore asperiores omnis quis rerum corrupti beatae reiciendis, veritatis odit obcaecati minus pariatur harum! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Repellat, eius! Quo cum nisi vel obcaecati accusantium labore temporibus mollitia eius, porro incidunt voluptatem? Iusto sint fuga deserunt consectetur ex aut.</p>
               <!-- CARDS-->
               <div class="row container-fluid align-items-center">
                 <div class="col-sm-6 col-12">
-                <div class="card text-center mb-3 shadow p-3 bg-warning rounded" style="width: auto;">
-                  <h5 class="card-title text-white"><strong>Espèces menacées</strong></h5>
+                <div class="card text-center text-white mb-3 shadow p-3 bg-warning rounded" style="width: auto;">
+                  <h5 class="card-title"><strong>Espèces menacées</strong></h5>
                   <div id="carouselThreatenedSpecies" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -105,14 +105,14 @@
                     </div>
                   </div>
                   <div class="card-body bg-warning" id="card_body">
-                    <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi nisi ducimus laborum eveniet eos itaque ullam veniam perspiciatis.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi nisi ducimus laborum eveniet eos itaque ullam veniam perspiciatis.</p>
                     <button type="button" class="btn btn-outline-dark">En savoir plus</button>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-12">
-                <div class="card text-center mb-3 shadow p-3 bg-danger rounded">
-                  <h5 class="card-title text-white"><strong>Espèces en voie d'extinction</strong></h5>
+                <div class="card text-center text-white mb-3 shadow p-3 bg-danger rounded">
+                  <h5 class="card-title"><strong>Espèces en voie d'extinction</strong></h5>
                   <div id="carouselToBeExtinctSpecies" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -127,7 +127,7 @@
                     </div>
                   </div>
                   <div class="card-body bg-danger" id="card_body">
-                    <p class="card-text text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi nisi ducimus laborum eveniet eos itaque ullam veniam perspiciatis.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi nisi ducimus laborum eveniet eos itaque ullam veniam perspiciatis.</p>
                     <button type="button" class="btn btn-outline-dark">En savoir plus</button>
                   </div>
                 </div>
@@ -142,8 +142,82 @@
       <!-- RIGHT SECTION -->
       <div class="col-12 col-xl-6">
         <section>
-          <article class="container-fluid" id="no_border">
-            <h3></h3>
+          <article class="container-fluid pb-3" id="species_preservation">
+            <h3 class="pt-2">Participer à la préservation des espaces menacés</h3>
+            <div class="accordion pt-3" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Au quotidien
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Nous sommes les premières causes du rétrécissement des habitats de vie des espèces en danger, et vous pouvez les sauver. Vos gestes du quotidien peuvent suffir à protéger ces espèces et leur offrir de meilleures conditions. Vous pouvez : 
+                    <br>
+                    <div class="d-flex mx-auto">
+                      <ul class="mx-auto protect_list">
+                        <li>Réduire votre consommation d'eau</li>
+                        <li>Réduire votre empreinte carbone</li>
+                        <li>Réduire vos déchets</li>
+                        <li>Respecter la faune et la flore autour de vous</li>
+                      </ul>
+                    </div>                
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      A nos côtés
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Si vous souhaitez participer de plus près à la conservation des espèces et des espaces de vie ou y contribuer, nous vous invitons à prendre part à nos évènements. Ceux-ci vous enverront au sein même des endroits protégés accessibles ou dans les zoos participant activement à la préservation des espèces et des espaces.
+                    <br>
+                    <br>
+                    Vous trouverez plus d'informations concernant les évènements <a href="event.html" class="link-info">ici</a>.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0 text-center">
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      A distance
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Si vous souhaitez contribuer mais n'avez pas le temps de prendre part aux évènements, toute donation sera alors la bienvenue. Vous pouvez dans ce cas remplir le formulaire ci-dessous et envoyer à notre association le montant de votre choix.
+                    <br>
+                    <br>
+                    <div class="row">
+                      <div class="card-body">
+                        <div class="card mx-auto container-fluid col-12 col-sm-6">
+                          <h5 class="card-title">Card title</h5>
+                          <div class="card-text">
+                            <form action="" method="post">
+                              <div class="row">
+                                <label for="payment_name">Nom</label>
+                                <input type="text" name="payment_name" id="payment_name" class="form-control">
+                              </div>
+                            </form>
+                          </div> 
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>          
+              </div>
+            </div>
+        </div>
         </section>
       </div>
       <!-- END OF RIGHT SECTION -->
