@@ -59,6 +59,10 @@ article {
   border-right: none;
 }
 
+#who_are_we {
+  border-bottom: none;
+}
+
 @media screen and (max-width: 1200px) {
   body,
   html {

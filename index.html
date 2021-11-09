@@ -53,7 +53,7 @@
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-fluid text-uppercase">
         <a class="navbar-brand" href="index.html">Protect!on An!male</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive"> 
@@ -104,7 +104,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card-body bg-warning" id="card_body">
+                  <div class="card-body bg-warning">
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi nisi ducimus laborum eveniet eos itaque ullam veniam perspiciatis.</p>
                     <button type="button" class="btn btn-outline-dark">En savoir plus</button>
                   </div>
@@ -126,7 +126,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card-body bg-danger" id="card_body">
+                  <div class="card-body bg-danger">
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi nisi ducimus laborum eveniet eos itaque ullam veniam perspiciatis.</p>
                     <button type="button" class="btn btn-outline-dark">En savoir plus</button>
                   </div>
@@ -140,10 +140,10 @@
       <!-- END OF LEFT SECTION -->
 
       <!-- RIGHT SECTION -->
-      <div class="col-12 col-xl-6">
+      <div class="col-12 col-xl-6 container-fluid ">
         <section>
           <!-- FIRST ARTICLE OF RIGHT SECTION (TOP ONE) -->
-          <article class="container-fluid pb-3" id="species_preservation">
+          <article class="pb-3" id="species_preservation">
             <h3 class="pt-2">Participer à la préservation des espaces menacés</h3>
             <div class="accordion pt-3" id="accordionExample">
               <!-- FIRST CARD -->
@@ -212,15 +212,15 @@
                               <label for="card_holder" class="form-text">Détenteur de la carte</label>
                               <input type="text" name="card_holder" id="card_holder" placeholder="Nom Prénom" class="form-control mb-4" required>
                               <label for="card_number" class="form-text">Numéro de carte</label>
-                              <input type="number" class="form-control mb-4" placeholder="XXXX XXXX XXXX XXXX" required>
+                              <input type="number" id="card_number" name="card_number" class="form-control mb-4" placeholder="XXXX XXXX XXXX XXXX" required>
                               <div class="row">
                                 <div class="col">
                                   <label for="expire_date" class="form-text">Date d'expiration</label>
-                                  <input type="number" class="form-control mb-4" placeholder="MM / AAAA" required>
+                                  <input type="number" id="expire_date" name="expire_date" class="form-control mb-4" placeholder="MM / AAAA" required>
                                 </div>
                                 <div class="col">
                                   <label for="crypto" class="form-text">Cryptogramme</label>
-                                  <input type="number" class="form-control mb-4" placeholder="XXX" required>
+                                  <input type="number" id="crypto" name="crypto" class="form-control mb-4" placeholder="XXX" required>
                                 </div>
                               </div>
                               <span class="form-text">Montants fréquents :</span>
@@ -260,37 +260,36 @@
               <p class="p-2">Nous sommes une association de plus de 100.000 bénévoles dans toute la France faisant tout notre possible pour améliorer les conditions de vie des espèces en danger et les protéger.</p>
             <h5 class="fst-italic">"Mais alors ou va notre argent ?"</h5>
               <p class="p-2">Les fonds que nous récoltons par le biais des inscriptions aux évènements ou par une transaction à distance sur le formulaire de paiement sont utilisés pour :</p>
-                <table class="table table-dark table-striped w-auto mx-auto">
-                  <tbody>
-                    <tr>
-                      <th scope="row">></th>
-                      <td>Reconstruire les habitats des espèces en danger</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">></th>
-                      <td>Fournir à ces espèces une alimentation digne de celle de leur espace de vie</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">></th>
-                      <td>Leur fournir les soins nécessaires</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">></th>
-                      <td>Permettre leur extraction une fois à maturité vers un espace naturel</td>
-                    </tr>
-                  </tbody>
+              <table class="table table-dark table-striped w-auto mx-auto">
+                <tbody>
+                  <tr>
+                    <th scope="row">></th>
+                    <td>Reconstruire les habitats des espèces en danger</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">></th>
+                    <td>Fournir à ces espèces une alimentation digne de celle de leur espace de vie</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">></th>
+                    <td>Leur fournir les soins nécessaires</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">></th>
+                    <td>Permettre leur extraction une fois à maturité vers un espace naturel</td>
+                  </tr>
+                </tbody>
                 </table>
-            </article>
+          </article>
         </section>
       </div>
       <!-- END OF RIGHT SECTION -->
     </div>
-    
   </main>
+<!-- END OF MAIN CONTENT -->
 
-
-  <footer>
-    
+  <footer class="bg-dark">
+    <p class="text-white">Tous droits réservés.</p>
   </footer>
 
   <!-- JavaScript Bundle with Popper -->
