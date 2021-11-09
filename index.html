@@ -76,8 +76,8 @@
   
   <!-- MAIN -->
   <main class="container-fluid m-auto">
-    <h2 class="display-4 pb-4" id="main_title"><strong>Aidez-nous à préserver les espèces menacées</strong></h2>
-
+    <h2 class="display-4"><strong>Aidez-nous à préserver les espèces menacées</strong></h2>
+    <h6 class="pb-4 text-secondary fst-italic text-decoration-underline fw-bold" id="main_title">(Cette association de ma création est purement imaginaire et liée à mes études de webdesign. Merci pour votre compréhension)</h6>
     <!-- LEFT SECTION -->
     <div class="row">
       <div class="col-12 col-xl-6">
@@ -142,22 +142,24 @@
       <!-- RIGHT SECTION -->
       <div class="col-12 col-xl-6">
         <section>
+          <!-- FIRST ARTICLE OF RIGHT SECTION (TOP ONE) -->
           <article class="container-fluid pb-3" id="species_preservation">
             <h3 class="pt-2">Participer à la préservation des espaces menacés</h3>
             <div class="accordion pt-3" id="accordionExample">
+              <!-- FIRST CARD -->
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0 text-center">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Au quotidien
                     </button>
                   </h5>
                 </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                   <div class="card-body">
                     Nous sommes les premières causes du rétrécissement des habitats de vie des espèces en danger, et vous pouvez les sauver. Vos gestes du quotidien peuvent suffir à protéger ces espèces et leur offrir de meilleures conditions. Vous pouvez : 
                     <br>
-                    <div class="d-flex mx-auto">
+                    <div class="d-flex mx-auto mt-2">
                       <ul class="mx-auto protect_list">
                         <li>Réduire votre consommation d'eau</li>
                         <li>Réduire votre empreinte carbone</li>
@@ -168,11 +170,12 @@
                   </div>
                 </div>
               </div>
+              <!-- SECOND CARD -->
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0 text-center">
-                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      A nos côtés
+                    <button class="btn collapsed btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      À nos côtés
                     </button>
                   </h5>
                 </div>
@@ -185,11 +188,12 @@
                   </div>
                 </div>
               </div>
+              <!-- THIRD CARD -->
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0 text-center">
-                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                      A distance
+                    <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      À distance
                     </button>
                   </h5>
                 </div>
@@ -198,26 +202,85 @@
                     Si vous souhaitez contribuer mais n'avez pas le temps de prendre part aux évènements, toute donation sera alors la bienvenue. Vous pouvez dans ce cas remplir le formulaire ci-dessous et envoyer à notre association le montant de votre choix.
                     <br>
                     <br>
+                    <!-- PAYMENT FORM -->
                     <div class="row">
                       <div class="card-body">
-                        <div class="card mx-auto container-fluid col-12 col-sm-6">
-                          <h5 class="card-title">Card title</h5>
+                        <div class="card shadow-lg mx-auto container-fluid col-12 col-sm-6 border-light">
+                          <h6 class="card-title pt-2 pb-2 text-uppercase ">Informations de paiement</h6>
                           <div class="card-text">
                             <form action="" method="post">
+                              <label for="card_holder" class="form-text">Détenteur de la carte</label>
+                              <input type="text" name="card_holder" id="card_holder" placeholder="Nom Prénom" class="form-control mb-4" required>
+                              <label for="card_number" class="form-text">Numéro de carte</label>
+                              <input type="number" class="form-control mb-4" placeholder="XXXX XXXX XXXX XXXX" required>
                               <div class="row">
-                                <label for="payment_name">Nom</label>
-                                <input type="text" name="payment_name" id="payment_name" class="form-control">
+                                <div class="col">
+                                  <label for="expire_date" class="form-text">Date d'expiration</label>
+                                  <input type="number" class="form-control mb-4" placeholder="MM / AAAA" required>
+                                </div>
+                                <div class="col">
+                                  <label for="crypto" class="form-text">Cryptogramme</label>
+                                  <input type="number" class="form-control mb-4" placeholder="XXX" required>
+                                </div>
                               </div>
+                              <span class="form-text">Montants fréquents :</span>
+                                <br>
+                                <div class="form-check form-check-inline mb-4">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ten" value="option1">
+                                  <label class="form-check-label" for="ten">10€</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="twenty" value="option2">
+                                  <label class="form-check-label" for="twenty">20€</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="fifty" value="option3">
+                                  <label class="form-check-label" for="fifty">50€</label>
+                                </div>
+                              <label for="amount" class="form-text">Ou choisissez votre montant :</label>
+                              <input type="number" name="amount" id="amount" class="form-control mb-4 w-50">
                             </form>
-                          </div> 
+                            <div class="text-center">
+                              <button type="submit" class="btn btn-success mb-4">Envoyer</button>
+                            </div> 
+                          </div>
                         </div>  
                       </div>
                     </div>
+                    <!-- END OF PAYMENT FORM -->
                   </div>
                 </div>          
               </div>
             </div>
-        </div>
+          </article>
+
+          <!-- SECOND ARTICLE OF RIGHT SECTION (BOTTOM ONE) -->
+          <article id="who_are_we">
+            <h3 class="pt-2">Qui sommes-nous ?</h3>
+              <p class="p-2">Nous sommes une association de plus de 100.000 bénévoles dans toute la France faisant tout notre possible pour améliorer les conditions de vie des espèces en danger et les protéger.</p>
+            <h5 class="fst-italic">"Mais alors ou va notre argent ?"</h5>
+              <p class="p-2">Les fonds que nous récoltons par le biais des inscriptions aux évènements ou par une transaction à distance sur le formulaire de paiement sont utilisés pour :</p>
+                <table class="table table-dark table-striped w-auto mx-auto">
+                  <tbody>
+                    <tr>
+                      <th scope="row">></th>
+                      <td>Reconstruire les habitats des espèces en danger</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">></th>
+                      <td>Fournir à ces espèces une alimentation digne de celle de leur espace de vie</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">></th>
+                      <td>Leur fournir les soins nécessaires</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">></th>
+                      <td>Permettre leur extraction une fois à maturité vers un espace naturel</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </article>
         </section>
       </div>
       <!-- END OF RIGHT SECTION -->
