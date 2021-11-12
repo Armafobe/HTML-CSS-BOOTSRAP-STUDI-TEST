@@ -63,6 +63,15 @@ article {
   border-bottom: none;
 }
 
+footer {
+  background-color: black;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
 @media screen and (max-width: 1200px) {
   body,
   html {
