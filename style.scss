@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap");
+
+html,
+body {
+  font-family: Yaldevi, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(227, 236, 242);
+}
+
+nav ul li {
+  font-size: 1.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+article {
+  border-right: 4px solid black;
+}
+
+p,
+article {
+  text-align: justify;
+}
+
+.protect_list {
+  list-style-type: "\2713";
+  color: green;
+}
+
+.protect_list li {
+  padding-left: 5px;
+}
+
+#home:hover,
+#event:hover,
+#contact {
+  color: rgb(25, 135, 84);
+}
+
+#contact:hover {
+  background-color: rgb(25, 135, 84);
+  color: white;
+}
+
+#main_title,
+#species_preservation {
+  border-bottom: 4px solid black;
+}
+
+#species {
+  margin-right: 0px;
+}
+
+#species_preservation,
+#who_are_we {
+  border-right: none;
+}
+
+#who_are_we {
+  border-bottom: none;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background-color: black;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  body,
+  html {
+    width: auto;
+  }
+
+  article {
+    border-right: none;
+    border-bottom: 4px solid black;
+  }
+
+  #payment {
+    width: 100%;
+  }
+
+  #species {
+    margin-left: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
