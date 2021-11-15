@@ -2,8 +2,8 @@
 html,
 body {
   font-family: Yaldevi, sans-serif;
-  width: 99vw;
-  height: 99vh;
+  width: 100vw;
+  height: 100vh;
   background-color: #e3ecf2;
 }
 
@@ -54,6 +54,10 @@ article {
   border-bottom: 4px solid black;
 }
 
+#species {
+  margin-right: 0px;
+}
+
 #species_preservation,
 #who_are_we {
   border-right: none;
@@ -64,6 +68,10 @@ article {
 }
 
 footer {
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
   background-color: black;
 }
 
@@ -83,6 +91,9 @@ footer p {
   }
   #payment {
     width: 100%;
+  }
+  #species {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
